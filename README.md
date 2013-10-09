@@ -1,0 +1,4 @@
+ParadigmBot
+===========
+
+Your basic functioning
