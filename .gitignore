@@ -1,6 +1,96 @@
-*.class
+package kareltherobot;
 
-# Package Files #
-*.jar
-*.war
-*.ear
+import kareltherobot.UrRobot;
+import kareltherobot.World;
+import kareltherobot.Directions;
+
+public class ParadigmBot extends UrRobot
+{
+	public ParadigmBot (int street, int avenue, Direction direction, int beepers)
+	{
+		super (street, avenue, direction, beepers);
+	}
+
+
+	public void turnRight()
+	{
+		turnLeft();
+		turnLeft();
+		turnLeft();
+		
+	}
+
+	public void turnAround()
+	{
+		turnLeft();
+		turnLeft();
+	}
+	
+	public void moveMile()
+	{
+		move();
+		move();
+		move();
+		move();
+		move();
+		move();
+		move();
+		move();
+	}
+	
+	public void halfMile()
+	{
+		move();
+		move();
+		move();
+		move();
+	}
+	
+	public void doubleMove()
+	{
+		move();
+		move();
+	}
+	
+	public void dropAndMove()
+	{
+		putBeeper();
+		move();
+	}
+	
+	public void move20()
+	{
+		move();
+		move();
+		move();
+		move();
+		move();
+		move();
+		move();
+		move();
+		move();
+		move();
+		move();
+		move();
+		move();
+		move();
+		move();
+		move();
+		move();
+		move();
+		move();
+		move();
+	}
+	
+	public void movePut()
+	{
+		move();
+		putBeeper();
+	}
+	
+	public void moveBack() //move one step back face same direction
+	{
+		turnAround();
+		move();
+		turnAround();
+	}}
